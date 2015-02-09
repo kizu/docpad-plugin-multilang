@@ -15,16 +15,17 @@
     "Roman Komarov <kizmarh@ya.ru> (https://github.com/kizu/)"
   ],
   "contributors": [
-    "balupton (https://github.com/balupton)"
+    "balupton (https://github.com/balupton)",
+    "Roman Komarov <kizmarh@ya.ru> (https://github.com/kizu/)"
   ],
   "bugs": {
     "url": "https://github.com/kizu/docpad-plugin-multilang/issues"
   },
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "https://github.com/kizu/docpad-plugin-multilang.git"
   },
-  "engines" : {
+  "engines": {
     "node": ">=0.8"
   },
   "peerDependencies": {
@@ -52,7 +53,8 @@
     "flattr": "344188/balupton-on-Flattr",
     "paypal": "QB8GQPZAH84N6",
     "bitcoin": "https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a",
-    "wishlist": "http://amzn.com/w/2F8TXKSNAFG4V"
+    "wishlist": "http://amzn.com/w/2F8TXKSNAFG4V",
+    "npmdownloads": true
   },
   "cakeConfiguration": {
     "COFFEE_SRC_PATH": "src"
