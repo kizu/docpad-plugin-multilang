@@ -1,0 +1,60 @@
+{
+  "name": "docpad-plugin-multilang",
+  "version": "2.0.0",
+  "description": "DocPad plugin that adds the ability to create multilanguage sites in a proper way",
+  "homepage": "https://github.com/kizu/docpad-plugin-multilang",
+  "keywords": [
+    "docpad",
+    "docpad-plugin",
+    "language",
+    "i18n",
+    "l10n"
+  ],
+  "author": "Roman Komarov <kizmarh@ya.ru> (http://kizu.ru/en/)",
+  "maintainers": [
+    "Roman Komarov <kizmarh@ya.ru> (https://github.com/kizu/)"
+  ],
+  "contributors": [
+    "balupton (https://github.com/balupton)"
+  ],
+  "bugs": {
+    "url": "https://github.com/kizu/docpad-plugin-multilang/issues"
+  },
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/kizu/docpad-plugin-multilang.git"
+  },
+  "engines" : {
+    "node": ">=0.8"
+  },
+  "peerDependencies": {
+    "docpad": "6"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "~1.6.3",
+    "docpad": "6",
+    "projectz": "~0.3.13"
+  },
+  "main": "./out/multilang.plugin.js",
+  "scripts": {
+    "test": "node ./out/multilang.test.js"
+  },
+  "license": {
+    "type": "MIT"
+  },
+  "badges": {
+    "travis": true,
+    "npm": true,
+    "david": true,
+    "daviddev": true,
+    "gittip": "docpad",
+    "flattr": "344188/balupton-on-Flattr",
+    "paypal": "QB8GQPZAH84N6",
+    "bitcoin": "https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a",
+    "wishlist": "http://amzn.com/w/2F8TXKSNAFG4V"
+  },
+  "cakeConfiguration": {
+    "COFFEE_SRC_PATH": "src"
+  }
+}
