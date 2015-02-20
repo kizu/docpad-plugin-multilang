@@ -16,6 +16,7 @@ module.exports = (BasePlugin) ->
         renderBefore: (opts) ->
             config = @config
             docpad = @docpad
+            escapeStringRegexp = require('escape-string-regexp')
             languages = config.languages
             defaultLanguage = config.defaultLanguage
             shouldPrettifyURL = config.prettifyURL
@@ -31,12 +32,13 @@ module.exports = (BasePlugin) ->
             docpad.getCollection('documents').findAllLive({relativePath: languageRegex}).forEach (document) ->
                 parts = document.attributes.relativeBase.match(languageRegex)
                 initialName = parts[1]
+                initialNameEscaped = escapeStringRegexp(initialName)
                 language = parts[2]
 
-                addPrefixRegex = ///(#{initialName}_#{language})///
+                addPrefixRegex = ///(#{initialNameEscaped}_#{language})///
                 addPrefixReplace = "#{language}/$1"
-                removePostfixRegex = ///(#{initialName})_#{language}///
-                replaceWithIndexRegex = ///(#{initialName})\.html///
+                removePostfixRegex = ///(#{initialNameEscaped})_#{language}///
+                replaceWithIndexRegex = ///(#{initialNameEscaped})\.html///
                 replaceWithIndexReplace = "$1/index.html"
 
                 if shouldOmitDefaultFolder and language == defaultLanguage

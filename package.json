@@ -1,6 +1,6 @@
 {
   "name": "docpad-plugin-multilang",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "DocPad plugin that adds the ability to create multilanguage sites in a proper way",
   "homepage": "https://github.com/kizu/docpad-plugin-multilang",
   "keywords": [
@@ -31,7 +31,9 @@
   "peerDependencies": {
     "docpad": "6"
   },
-  "dependencies": {},
+  "dependencies": {
+    "escape-string-regexp": "~1.0.2"
+  },
   "devDependencies": {
     "coffee-script": "~1.6.3",
     "docpad": "6",
